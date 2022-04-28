@@ -22,13 +22,14 @@ namespace raked
                 notifyIcon1.ShowBalloonTip(1000, "برنامج راكد", "يمكنك تشغيل راكد عبر الضغط على زر الأيقونة.", ToolTipIcon.Info);
 
             }
-            if (e.Control && e.KeyCode == Keys.Q)
+            else if (e.Control && e.KeyCode == Keys.Q)
             {
                 this.Hide();
                 notifyIcon1.ShowBalloonTip(1000, "برنامج راكد", "يمكنك تشغيل راكد عبر الضغط على زر الأيقونة.", ToolTipIcon.Info);
             }
             else if (e.Control && e.KeyCode == Keys.W)
             {
+                // open form Setting and this hide
                 this.Hide();
                 frmSetting frm = new frmSetting();
                 frm.ShowDialog();
@@ -41,19 +42,19 @@ namespace raked
             {
                 e.Handled = true;
             }*/
-            
-            
-           
+
         }
 
         private void notifyIcon1_MouseClick(object sender, MouseEventArgs e)
         {
+            // show form when click icon app in Task Bar icons
             this.Show();
         }
 
         private void frmHome_KeyPress(object sender, KeyPressEventArgs e)
         {
-            // not important
+            //--- not important
+            // cancel keys press on the keyboard
             e.Handled = true;
         }
         string strInfoApp = @"
@@ -64,12 +65,17 @@ namespace raked
          التطبيق ستجده في قائمة الايقونات المخفية في شريط المهام عند تشغيل جهاز الكمبيوتر, فليس من الضروري تشغيل التطبيق مرة أخرى 
 
          Ctrl+W لإظهار معلومات عن التطبيق انقر على
+
+         alt+F4 لإغلاق  التطبيق انتقل إلى شاشة عن التطبيق وانقر
         ";
         private void frmHome_Load(object sender, EventArgs e)
         {
             MessageBox.Show(strInfoApp, "تعليمات",MessageBoxButtons.OK,MessageBoxIcon.Information,MessageBoxDefaultButton.Button1,MessageBoxOptions.RightAlign);
+            // hide form
             this.Hide();
+            // message notify 
             notifyIcon1.ShowBalloonTip(1000, "راكد", "يمكنك تشغيل وضع الركود عبر الضغط على زر الأيقونة.", ToolTipIcon.Info);
+            //  run app when you run device
             Registry.SetValue(@"HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run", "Raked", Application.ExecutablePath);
         }
     }

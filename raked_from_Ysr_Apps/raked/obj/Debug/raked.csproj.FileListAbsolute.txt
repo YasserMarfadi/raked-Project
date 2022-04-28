@@ -4,8 +4,8 @@ C:\Users\Yasser\source\repos\raked_from_Ysr_Apps\raked\obj\Debug\raked.csproj.Ge
 C:\Users\Yasser\source\repos\raked_from_Ysr_Apps\raked\obj\Debug\raked.csproj.CoreCompileInputs.cache
 C:\Users\Yasser\source\repos\raked_from_Ysr_Apps\raked\obj\Debug\raked.csproj.AssemblyReference.cache
 C:\Users\Yasser\source\repos\raked_from_Ysr_Apps\raked\obj\Debug\raked.frmSetting.resources
-C:\Users\Yasser\source\repos\raked_from_Ysr_Apps\raked\bin\Debug\راكد.exe.config
-C:\Users\Yasser\source\repos\raked_from_Ysr_Apps\raked\bin\Debug\راكد.exe
-C:\Users\Yasser\source\repos\raked_from_Ysr_Apps\raked\bin\Debug\راكد.pdb
-C:\Users\Yasser\source\repos\raked_from_Ysr_Apps\raked\obj\Debug\راكد.exe
-C:\Users\Yasser\source\repos\raked_from_Ysr_Apps\raked\obj\Debug\راكد.pdb
+C:\Users\Yasser\source\repos\raked_from_Ysr_Apps\raked\bin\Debug\راكـــد.exe.config
+C:\Users\Yasser\source\repos\raked_from_Ysr_Apps\raked\bin\Debug\راكـــد.exe
+C:\Users\Yasser\source\repos\raked_from_Ysr_Apps\raked\bin\Debug\راكـــد.pdb
+C:\Users\Yasser\source\repos\raked_from_Ysr_Apps\raked\obj\Debug\راكـــد.exe
+C:\Users\Yasser\source\repos\raked_from_Ysr_Apps\raked\obj\Debug\راكـــد.pdb

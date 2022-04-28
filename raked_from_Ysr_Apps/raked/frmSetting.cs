@@ -20,12 +20,13 @@ namespace raked
 
         private void lblUrlApp_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start("https://github.com/YasserMarfadi/app-raked/tree/main");
+            Process.Start("https://yassermarfadi.github.io/raked/");
         }
 
         private void lblUrlProject_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start("https://github.com/YasserMarfadi/raked-Project/tree/main/");
+            Process.Start("https://yassermarfadi.github.io/raked/");
+            // Process.Start("https://github.com/YasserMarfadi/raked-Project/tree/main/");
         }
 
         private void frmSetting_FormClosing(object sender, FormClosingEventArgs e)
@@ -33,14 +34,13 @@ namespace raked
             Application.OpenForms[0].Show();
         }
 
-        private void lblFacebookPage_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void frmSetting_KeyDown(object sender, KeyEventArgs e)
         {
-            Process.Start("//https://www.facebook.com/ysrapps1/");
-        }
-
-        private void lblFbProfile_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            Process.Start("https://www.facebook.com/profile.php?id=100006079211817");
+            // close app 
+            if (e.Alt && e.KeyCode == Keys.F4)
+            {
+                Application.OpenForms[0].Close();
+            }
         }
     }
 }
